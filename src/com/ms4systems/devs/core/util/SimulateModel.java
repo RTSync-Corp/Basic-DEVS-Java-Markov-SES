@@ -26,9 +26,9 @@ public class SimulateModel {
 	public  AtomicModel model = null;
 	 String folder = System.getProperty("user.dir") + File.separator;
 	 
-	 String foldertxt = folder + "src\\Models\\txt"+ File.separator;
-	 String folderpes = folder + "src\\Models\\pes"+ File.separator;
-	 String folderses = folder + "src\\Models\\ses"+ File.separator;	
+	 public static String foldertxt = folder + "src" + File.separator + "Models" + File.separator + "txt" + File.separator;
+	 public static String folderpes = folder + "src" + File.separator + "Models" + File.separator + "pes" + File.separator;
+	 public static String folderses = folder + "src" + File.separator + "Models" + File.separator + "ses" + File.separator;
 	 
 	 public  String resultsFile = foldertxt+"RunSims.txt";
 	 public Simulation sim;
