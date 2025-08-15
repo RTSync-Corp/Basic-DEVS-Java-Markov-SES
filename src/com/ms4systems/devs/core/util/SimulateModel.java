@@ -480,10 +480,11 @@ public class SimulateModel {
   	//	Simulation 
 
   		sim = new    SimulationImpl("Simulation",model);
-  		//set the parameters for each run assuming non-default settings		
-  		setParams();
+  		
   		//initialize the simulation
   			  			sim.startSimulation(0);
+		//set the parameters after initialize for each run assuming non-default settings		
+  						setParams();
   		//do the simulation		
 			 		sim.simulateIterations(Long.MAX_VALUE);
   					sim.stopSimulation();
@@ -501,11 +502,12 @@ public class SimulateModel {
 		
 		sim = new com.ms4systems.devs.core.simulation.impl.
  			     SimulationImpl("Simulation",model);
- 		//set the parameters for each run assuming non-default settings	
- 		setParams();
+ 		
  		double start = System.currentTimeMillis();
  		//initialize the simulation
  		sim.startSimulation(0);
+		//set the parameters for each run assuming non-default settings	
+ 		setParams();
  		//do the simulation		
  		sim.simulateIterations(Long.MAX_VALUE);
  		sim.stopSimulation();
